@@ -44,9 +44,8 @@ for i in range (0, 10):
     INSERT INTO "stock" VALUES (2{product_id_list[i]}, {product_id_list[i]}, {product_quantity[i]});
     COMMIT;
     """
-cursor = conn.cursor()
-
-cursor.execute(sql)
+    cursor = conn.cursor()
+    cursor.execute(sql)
 
 
 view = """
